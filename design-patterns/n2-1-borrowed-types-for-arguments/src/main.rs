@@ -22,7 +22,8 @@ fn three_vowels(word: &str) -> bool {
     false
 }
 
-fn main() {
+#[allow(dead_code)]
+fn main0() {
     let ferris: String = "Ferris".to_string();
     let curious: String = "Curious".to_string();
 
@@ -33,4 +34,14 @@ fn main() {
     // if func param type was String (rather than str):
     println!("Ferris: {}", three_vowels("Ferris")); // param is str type
     println!("Curious: {}", three_vowels("Curious")); // param is str type
+}
+
+fn main() {
+    let sentence_string =
+        "Once upon a time, there was a friendly curious crab named Ferris who was asked to present an _iou_!".to_string();
+    for word in sentence_string.split(' ') {
+        if three_vowels(word) {
+            println!("{word} has three consecutive vowels!");
+        }
+    }
 }
