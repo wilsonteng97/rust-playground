@@ -4,7 +4,7 @@
 
 fn three_vowels(word: &str) -> bool {
     let mut vowel_count = 0;
-    for (_i, c) in word.chars().enumerate()
+    for c in word.chars()
     {
         match c {
             'a' | 'e' | 'i' | 'o' | 'u' => {
