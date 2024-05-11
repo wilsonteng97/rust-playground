@@ -2,5 +2,5 @@
 
 members = [
     "n2-1-borrowed-types-for-arguments",
-    "n2-2-concat-strings-w-format",
+    "n2-2-concat-strings-w-format", "n2-3-ctors",
 ]
